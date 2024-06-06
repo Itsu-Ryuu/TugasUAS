@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body {
-            background: url('140295133_3495255623929668_5784562103130096707_n.jpg');
+            background: url('./images/bg-login.jpg');
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
