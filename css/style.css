@@ -1,0 +1,58 @@
+body {
+    background: url('./../images/bg-login1.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.login-wrapper {
+    max-width: 30%;
+    height: 450px;
+    padding-top: 30px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #f1f1f1;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    background: #f1f1f1;
+    margin-top: auto;
+}
+
+
+.custom-navbar {
+    background-color: #ff2f00; 
+}
+.custom-navbar .navbar-brand, .custom-navbar .nav-link {
+    color: #011700; 
+}
+.custom-navbar .nav-link.active {
+    font-weight: bold; 
+}
