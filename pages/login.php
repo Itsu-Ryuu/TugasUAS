@@ -8,12 +8,12 @@
             <form method="post" action="login.php">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
-                    <label for="floatingInput">Nama</label>
+                    <label for="floatingInput"><p class="fs-6" style= "font-size=1px; ">Username</p></label>
                     <div id="UsernameHelp" class="form-text">We'll never share your Nama with anyone else.</div>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="password" class="form-control" id="id_pelanggan" name="id_pelanggan" placeholder="id_pelanggan">
-                    <label for="floatingPassword">id_pelanggan</label>
+                    <label for="floatingPassword">Password</label>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="check-me-out" name="check-me-out" onchange="clickChecked()">
@@ -23,4 +23,6 @@
             </form>
         </div>
     </div>
+
+ 
 <?php include "./../layout/footer.php" ?>

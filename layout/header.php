@@ -22,13 +22,16 @@
               <li class="nav-item">
                 <a class="nav-link active" href="./../pages/pusatinformasi.php">Tentang kami</a>
               </li>
-              <?php if(!isset($_SESSION['Nama'])) :?>
+              <li class="nav-item">
+                <a class="nav-link active" href="./../pages/dashboard.php">Dashboard</a>
+              </li>
+              <?php if(!isset($_SESSION['is_login'])) :?>
                 <li class="nav-item">
                   <button class="btn btn-success" onclick="goToLogin()">Login</button>
                 </li>
               <?php else :?>
                 <li class="nav-item">
-                  <button class="btn btn-danger" onclick="logout()">Logout</button>
+                  <button class="btn btn-" onclick="logout()">Logout</button>
                 </li>
               <?php endif; ?>
             </ul>

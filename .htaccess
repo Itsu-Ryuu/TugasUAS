@@ -1,1 +1,1 @@
-RedirectMatch 301 ^/TugasUAS/?$ /TugasUAS/pages/index.php
+RedirectMatch 301 ^/ListrikRumahTangga.com/?$ /ListrikRumahTangga.com/pages/index.php

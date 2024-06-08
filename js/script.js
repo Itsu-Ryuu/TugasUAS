@@ -33,3 +33,4 @@ function logout(){
 function goToLogin() {
     window.open('../pages/login.php','_self')
 }
+

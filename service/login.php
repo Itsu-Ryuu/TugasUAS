@@ -27,7 +27,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     
     if($result->num_rows > 0) {
         $data = $result->fetch_assoc();
-        $_SESSION["Nama"] = $data["nama"];
+        $_SESSION["Nama"] = $data["Nama"];
+        $_SESSION["Id_pelanggan"] = $data["id_pelanggan"];
         $_SESSION["is_login"] = true;
 
         header ("location: dashboard.php");
