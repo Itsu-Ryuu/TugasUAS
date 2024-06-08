@@ -38,7 +38,9 @@
                                 <span class="badge bg-danger text-white">melebihi batas tanggal</span>
                             <?php endif;?>
                         </td>
-                        <td><button type="button" class="badge bg-success text-white" data-bs-toggle="modal" data-bs-target="#modal-bayar">bayar</button></td>
+                        <?php if($status!=2):?>
+                            <td><button type="button" class="badge bg-success text-white" data-bs-toggle="modal" data-bs-target="#modal-bayar">bayar</button></td>
+                        <?php endif; ?>
                     </tr>
                 </tbody>
             </table>
@@ -67,7 +69,6 @@
             <br>
             <form method="post" action="./../service/pembayaran.php" >
                 <li>Rp <input type="text" placeholder="Masukan Jumlah Bayar" oninput="formatNumber()" id="input-bayar" name="input-bayar"></li>
-                
             </ul>
         </div>
         <div class="modal-footer">
