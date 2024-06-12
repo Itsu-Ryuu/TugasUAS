@@ -22,8 +22,15 @@
               <li class="nav-item">
                 <a class="nav-link active" href="./../pages/pusatinformasi.php">Tentang kami</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./../pages/dashboard.php">Dashboard</a>
+              <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dashboard
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./../pages/profilpengguna.php">Profil Pengguna</a></li>
+            <li><a class="dropdown-item" href="./../pages/dashboard.php">Pembayaran Listrik</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
               </li>
               <?php if(!isset($_SESSION['is_login'])) :?>
                 <li class="nav-item">
