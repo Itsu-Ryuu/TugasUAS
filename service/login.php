@@ -31,10 +31,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $_SESSION["Id_pelanggan"] = $data["id_pelanggan"];
         $_SESSION["is_login"] = true;
 
-        header ("location: dashboard.php");
+        header ("location: profilpengguna.php");
         exit();
     }else {
-        echo "<script>alert('akun tidak ditemukan')</script>";
+        echo "<script>
+        Swal.fire({
+            title: 'Error!',
+            text: 'Akun Tidak Ditemukan',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+        </script>";
     }
 }
 ?>

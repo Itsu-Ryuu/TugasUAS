@@ -1,6 +1,6 @@
 <?php
-    include "./../service/login.php";
     include "./../layout/header.php";
+    include "./../service/login.php";
 ?>
     <div class="login-wrapper">
         <div class="login-container">
@@ -8,7 +8,7 @@
             <form method="post" action="login.php">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
-                    <label for="floatingInput"><p class="fs-6" style= "font-size=1px; ">Username</p></label>
+                    <label for="floatingInput"><p class="fs-6" style= "font-size:1px; ">Username</p></label>
                     <div id="UsernameHelp" class="form-text">We'll never share your Nama with anyone else.</div>
                 </div>
                 <div class="form-floating mb-3">
