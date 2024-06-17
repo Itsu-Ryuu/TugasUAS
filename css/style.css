@@ -3,7 +3,7 @@ html, body{
 }
 
 body {
-    background: url('./../images/bg-login1.jpg');
+    background: url('./../images/bg-login.jpg');
     overflow-y: auto;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -42,7 +42,7 @@ main {
 }
 
 .content-wrapper {
-    max-height: 90vh; /* Mengatur tinggi elemen konten sesuai tinggi viewport */
+    max-height: 85vh; /* Mengatur tinggi elemen konten sesuai tinggi viewport */
     overflow-y: auto; /* Membuat konten dapat di-scroll secara vertikal */
     padding: 20px;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ footer {
 
 
 .custom-navbar {
-    background-color: #ff2f00; 
+    background-color: #6fe0ff; 
 }
 .custom-navbar .navbar-brand, .custom-navbar .nav-link {
     color: #011700; 
