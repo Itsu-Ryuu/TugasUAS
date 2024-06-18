@@ -14,9 +14,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.monaco-workbench .part.sidebar {
-    background: url('./../images/bg-PLN.jpg');
-    background-size: contain;
+.navbar-brand img {
+    max-width: 30px; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 main {
@@ -47,7 +47,7 @@ main {
 }
 
 .content-wrapper {
-    max-height: 85vh; /* Mengatur tinggi elemen konten sesuai tinggi viewport */
+    max-height: 83vh; /* Mengatur tinggi elemen konten sesuai tinggi viewport */
     overflow-y: auto; /* Membuat konten dapat di-scroll secara vertikal */
     padding: 20px;
     box-sizing: border-box;
