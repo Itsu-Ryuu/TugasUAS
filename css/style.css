@@ -14,6 +14,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.monaco-workbench .part.sidebar {
+    background: url('./../images/bg-PLN.jpg');
+    background-size: contain;
+}
+
 main {
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
