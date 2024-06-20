@@ -14,9 +14,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.profile-container img {
+    max-width: 200px;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.profile-container {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
 .navbar-brand img {
     max-width: 30px; /* Set maximum width */
     height: auto; /* Maintain aspect ratio */
+    margin-right: 5px;
 }
 
 main {
