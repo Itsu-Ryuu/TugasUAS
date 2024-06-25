@@ -40,7 +40,7 @@
                 </li>
               <?php else :?>
                 <li class="nav-item">
-                  <button class="btn btn-" onclick="logout()">Logout</button>
+                  <button class="btn btn-danger" onclick="logout()">Logout</button>
                 </li>
               <?php endif; ?>
             </ul>
