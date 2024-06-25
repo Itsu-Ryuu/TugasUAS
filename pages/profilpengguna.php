@@ -18,8 +18,10 @@ include "./../service/profilePengguna.php";
             </main>
         </div>
     </div>
-    <div>
-        <main class="container mt-5 text-center">
+    
+    <div class="content-wrapper d-flex flex-column" style="min-height: 50vh;">
+    <div class="mt-auto">
+        <main class="container text-center">
             <h3>Terima Kasih sudah memakai layanan PLN</h3>
         </main>
     </div>
