@@ -13,6 +13,7 @@
         <main class="container mt-5 text-center">
             <h3>Selamat Datang <?= $_SESSION["Nama"] ?> Pengguna Layanan PLN</h3>
         </main>
+    </div>
     <div class="content-wrapper">
         <main class="container mt-5 text-center">
                 <h3>Terima Kasih sudah memakai layanan PLN</h3>

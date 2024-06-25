@@ -17,12 +17,12 @@ body {
 .profile-container img {
     max-width: 200px;
     height: 200px;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-left: 30px;
 }
 
 .profile-container {
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-top: 300px;
 }
 
 .navbar-brand img {
