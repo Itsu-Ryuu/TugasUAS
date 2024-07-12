@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $nama = $_POST["nama"];
     }
-    $sql = "SELECT * FROM tabel_1_tugas WHERE nama='$nama' AND 
+    $sql = "SELECT * FROM tabel_pelanggan WHERE nama='$nama' AND 
     id_pelanggan='$id_pelanggan'";
     $result = $db->query($sql);
     

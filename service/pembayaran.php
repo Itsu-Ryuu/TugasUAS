@@ -7,8 +7,8 @@ if(isset($_POST['idPembayaran']))
     $id_pembayaran = $_POST['idPembayaran'];
 }
 
-$sql = "SELECT * FROM tabel_1_tugas a JOIN tabel_2_tugas b ON a.id_pelanggan = b.id_pelanggan JOIN 
-    tabel_3_tugas c ON b.id_meteran = c.id_meteran JOIN tabel_4_tugas d ON b.id_meteran = d.id_meteran JOIN tabel_6_tugas e ON b.id_meteran = e.id_meteran
+$sql = "SELECT * FROM tabel_pelanggan a JOIN tabel_meteran b ON a.id_pelanggan = b.id_pelanggan JOIN 
+    tabel_tagihan c ON b.id_meteran = c.id_meteran JOIN tabel_pembayaran d ON b.id_meteran = d.id_meteran JOIN tabel_pemakaian e ON b.id_meteran = e.id_meteran
     WHERE d.id_pembayaran = '$id_pembayaran'";
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
         $jumlah_yang_dibayar = (int) str_replace('.', '', $_POST['inputBayar']);
     }
     if ($jumlah_bayar === $jumlah_yang_dibayar) {
-        $query = "UPDATE tabel_4_tugas SET status=2 WHERE id_pembayaran=" . "'" . $data['id_pembayaran'] . "'";
+        $query = "UPDATE tabel_pembayaran SET status=2 WHERE id_pembayaran=" . "'" . $data['id_pembayaran'] . "'";
         $db->query($query);
         $response = array('success' => true);
         } else {

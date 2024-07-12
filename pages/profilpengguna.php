@@ -2,6 +2,7 @@
 session_start();
 include "./../layout/header.php";
 include "./../service/profilePengguna.php";
+$nomor = 1;
 ?>
 
 <div class="content-wrapper">
@@ -19,6 +20,31 @@ include "./../service/profilePengguna.php";
         </div>
     </div>
     
+<div class="d-flex justify-content-center align-items-center">
+    <div class="row ">
+        <div class="col-md-12 text-center" style="padding-top: 2px;">
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Id Pelanggan</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Nomor Meteran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <th scope="row"><?= $nomer++ ?></th>
+                            <td><?= $_SESSION['Nama'] ?></td>
+                            <td><?= $data['id_pelanggan'] ?></td>
+                            <td><?= $data['Alamat'] ?></td>
+                            <td><?= $data['nomor_meteran'] ?></td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+
     <div class="content-wrapper d-flex flex-column" style="min-height: 50vh;">
     <div class="mt-auto">
         <main class="container text-center">

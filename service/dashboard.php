@@ -5,8 +5,8 @@
         header ("location: login.php");
     }
     $id_pelanggan=$_SESSION['Id_pelanggan'];
-    $sql = "SELECT * FROM tabel_1_tugas a JOIN tabel_2_tugas b ON a.id_pelanggan = b.id_pelanggan JOIN 
-    tabel_3_tugas c ON b.id_meteran = c.id_meteran JOIN tabel_4_tugas d ON b.id_meteran = d.id_meteran JOIN tabel_6_tugas e ON b.id_meteran = e.id_meteran
+    $sql = "SELECT * FROM tabel_pelanggan a JOIN tabel_meteran b ON a.id_pelanggan = b.id_pelanggan JOIN 
+    tabel_tagihan c ON b.id_meteran = c.id_meteran JOIN tabel_pembayaran d ON b.id_meteran = d.id_meteran JOIN tabel_pemakaian e ON b.id_meteran = e.id_meteran
     WHERE a.id_pelanggan = '$id_pelanggan'";
     $result = $db->query($sql);
     $dataBayar = array();

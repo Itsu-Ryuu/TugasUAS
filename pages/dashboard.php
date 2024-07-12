@@ -6,7 +6,7 @@ $nomer = 1;
 ?>
 <div class="d-flex justify-content-center align-items-center">
     <div class="row ">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center" style="padding-top: 20px;">
             <table class="table table-dark table-striped">
                 <thead>
                     <tr>
