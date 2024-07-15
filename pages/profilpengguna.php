@@ -2,7 +2,7 @@
 session_start();
 include "./../layout/header.php";
 include "./../service/profilePengguna.php";
-$nomor = 1;
+$nomer = 1;
 ?>
 
 <div class="content-wrapper">
@@ -19,8 +19,7 @@ $nomor = 1;
             </main>
         </div>
     </div>
-    
-<div class="d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center mt-4">
     <div class="row ">
         <div class="col-md-12 text-center" style="padding-top: 2px;">
             <table class="table table-dark table-striped">
@@ -31,6 +30,7 @@ $nomor = 1;
                         <th scope="col">Id Pelanggan</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Nomor Meteran</th>
+                        <th scope="col">Golongan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,12 +40,13 @@ $nomor = 1;
                             <td><?= $data['id_pelanggan'] ?></td>
                             <td><?= $data['Alamat'] ?></td>
                             <td><?= $data['nomor_meteran'] ?></td>
+                            <td><?= $data['golongan'] ?></td>
                         </tr>
                 </tbody>
             </table>
         </div>
 
-    <div class="content-wrapper d-flex flex-column" style="min-height: 50vh;">
+    <div class="content-wrapper d-flex flex-column" style="min-height: 20vh;">
     <div class="mt-auto">
         <main class="container text-center">
             <h3>Terima Kasih sudah memakai layanan PLN</h3>

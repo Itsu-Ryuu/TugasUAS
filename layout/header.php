@@ -31,6 +31,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./../pages/profilpengguna.php">Profil Pengguna</a></li>
             <li><a class="dropdown-item" href="./../pages/dashboard.php">Pembayaran Listrik</a></li>
+            <li><a class="dropdown-item" href="./../pages/golongan.php">Info Golongan</a></li>
             <li><hr class="dropdown-divider"></li>
           </ul>
               </li>
