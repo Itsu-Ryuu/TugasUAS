@@ -4,6 +4,9 @@ include "./../layout/header.php";
 include "./../service/dashadmin.php";
 $nomer = 1;
 ?>
+<main class="container text-center">
+    <h3>Berikut Informasi Pembayaran Pelanggan</h3>
+</main>
 <div class="d-flex justify-content-center align-items-center">
     <div class="row ">
         <div class="col-md-12 text-center" style="padding-top: 20px;">
@@ -18,14 +21,13 @@ $nomer = 1;
                         <th scope="col">Tanggal Pemakaian</th>
                         <th scope="col">tanggal tagihan</th>
                         <th scope="col">status</th>
-                        <th scope="col">action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($dataBayar as $data) : ?>
                         <tr>
                             <th scope="row"><?= $nomer++ ?></th>
-                            <td><?= $_SESSION['Nama'] ?></td>
+                            <td><?= $data['Nama'] ?></td>
                             <td><?= $data['nomor_meteran'] ?></td>
                             <td><?= $data['id_tagihan'] ?></td>
                             <td><?= $data['jumlah_kwh'] ?></td>
@@ -40,14 +42,14 @@ $nomer = 1;
                                     <span class="badge bg-danger text-white">melebihi batas tanggal</span>
                                 <?php endif; ?>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <?php if ($data['status'] != 2) : ?>
                                     <button type="button" class="badge bg-success btn-bayar text-white" data-bs-toggle="modal" data-bs-target="#modal-bayar" data-nomor="<?= $data['nomor_meteran'] ?>" data-id="<?= $data['id_tagihan'] ?>" data-kwh="<?= $data['jumlah_kwh'] ?>" data-tanggal="<?= $data['tanggal_tagihan'] ?>"
                                     data-bayar="<?= $data['jumlah_bayar'] ?>"
                                     data-id-bayar="<?= $data['id_pembayaran'] ?>">
                                     bayar</button>
                                 <?php endif; ?>
-                            </td>
+                            </td> -->
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

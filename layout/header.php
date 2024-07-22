@@ -30,7 +30,14 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./../pages/profilpengguna.php">Profil Pengguna</a></li>
-            <li><a class="dropdown-item" href="./../pages/dashboard.php">Pembayaran Listrik</a></li>
+            <?php if (isset($_SESSION['is_admin'])) :?>
+              <li><a class="dropdown-item" href="./../pages/dashadmin.php">Admin Dashboard</a></li>
+            <?php else :?>
+                <li><a class="dropdown-item" href="./../pages/dashboard.php">Pembayaran Listrik</a></li>
+            <?php endif; ?>
+
+            
+
             <li><a class="dropdown-item" href="./../pages/golongan.php">Info Golongan</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="./../pages/admin.php">Admin</a></li>

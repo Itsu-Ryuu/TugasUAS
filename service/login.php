@@ -21,8 +21,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $nama = $_POST["nama"];
     }
-    $sql = "SELECT * FROM tabel_user WHERE nama='$nama' AND 
-    id_pelanggan='$id_pelanggan'";
+    $sql = "SELECT a.Nama AS Nama, a.id_pelanggan, b.nama AS role_name FROM tabel_user a JOIN tabel_role b ON a.id_role = b.id_role WHERE a.nama='$nama' AND 
+    a.id_pelanggan='$id_pelanggan'";
     $result = $db->query($sql);
     
     if($result->num_rows > 0) {
@@ -30,6 +30,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $_SESSION["Nama"] = $data["Nama"];
         $_SESSION["Id_pelanggan"] = $data["id_pelanggan"];
         $_SESSION["is_login"] = true;
+
+        if($data["role_name"] == 'admin')
+        {
+            $_SESSION["is_admin"] = true;
+        }
 
         header ("location: profilpengguna.php");
         exit();
