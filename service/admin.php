@@ -1,6 +1,6 @@
 <?php
     include "database.php";
-    session_start()
+    session_start();
 
     $login_message = "";
 
