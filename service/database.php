@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $Nama ="root";
 $id_pelanggan = "";
-$database_name = "tugas_besar1";
+$database_name = "tugas_besar";
 
 $db = mysqli_connect($hostname, $Nama, $id_pelanggan, $database_name);
 
