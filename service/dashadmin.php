@@ -2,7 +2,7 @@
     include "database.php";
     if(!isset($_SESSION['is_login']))
     {
-        header ("location: login.php");
+        header ("location: admin.php");
     }
     $id_pelanggan=$_SESSION['Id_pelanggan'];
     $sql = "SELECT * FROM tabel_user a JOIN tabel_meteran b ON a.id_pelanggan = b.id_pelanggan JOIN 

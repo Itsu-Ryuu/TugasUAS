@@ -7,7 +7,7 @@ if(isset($_POST['idPembayaran']))
     $id_pembayaran = $_POST['idPembayaran'];
 }
 
-$sql = "SELECT * FROM tabel_pelanggan a JOIN tabel_meteran b ON a.id_pelanggan = b.id_pelanggan JOIN 
+$sql = "SELECT * FROM tabel_user a JOIN tabel_meteran b ON a.id_pelanggan = b.id_pelanggan JOIN 
     tabel_tagihan c ON b.id_meteran = c.id_meteran JOIN tabel_pembayaran d ON b.id_meteran = d.id_meteran JOIN tabel_pemakaian e ON b.id_meteran = e.id_meteran
     WHERE d.id_pembayaran = '$id_pembayaran'";
 $result = $db->query($sql);

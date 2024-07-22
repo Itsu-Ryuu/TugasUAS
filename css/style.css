@@ -38,6 +38,22 @@ main {
     border-radius: 8px;
 }
 
+.admin-container {
+    max-width: 400px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.admin-wrapper {
+    max-width: 30%;
+    height: 450px;
+    padding-top: 30px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #f1f1f1;
+}
+
 .login-container {
     max-width: 400px;
     margin: auto;

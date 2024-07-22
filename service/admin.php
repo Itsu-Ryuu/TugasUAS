@@ -1,14 +1,14 @@
 <?php
     include "database.php";
-    session_start();
+    session_start()
 
     $login_message = "";
 
-    if(isset($_SESSION["is_login"])) {
-        header("location: dashboard.php");
+    if(!isset($_SESSION['is_login']))
+    {
+        header ("location: dashadmin.php");
     }
-
-if($_SERVER["REQUEST_METHOD"] == "POST") 
+    if($_SERVER["REQUEST_METHOD"] == "POST") 
 {
     $id_pelanggan = '';
     $nama = '';
@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $data = $result->fetch_assoc();
         $_SESSION["Nama"] = $data["Nama"];
         $_SESSION["Id_pelanggan"] = $data["id_pelanggan"];
-        $_SESSION["is_login"] = true;
+        $_SESSION["is_admin"] = true;
 
         header ("location: profilpengguna.php");
         exit();
