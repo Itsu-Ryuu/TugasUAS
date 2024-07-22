@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./../layout/header.php";
 include "./../service/dashadmin.php";
+include "./../layout/header.php";
 $nomer = 1;
 ?>
 <main class="container text-center">
@@ -59,3 +59,4 @@ $nomer = 1;
 
     </div>
 </div>
+<?php include "./../layout/footer.php" ?>
