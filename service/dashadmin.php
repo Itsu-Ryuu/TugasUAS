@@ -2,7 +2,7 @@
     include "database.php";
     if(!isset($_SESSION['is_login']))
     {
-        header ("location: login.php");
+        header ("location: admin.php");
     }
     if(!isset($_SESSION['is_admin']))
     {

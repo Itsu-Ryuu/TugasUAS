@@ -35,9 +35,12 @@
             <?php else :?>
                 <li><a class="dropdown-item" href="./../pages/dashboard.php">Pembayaran Listrik</a></li>
             <?php endif; ?>
+
             
+
             <li><a class="dropdown-item" href="./../pages/golongan.php">Info Golongan</a></li>
             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./../pages/admin.php">Admin</a></li>
           </ul>
               </li>
               <?php if(!isset($_SESSION['is_login'])) :?>
