@@ -39,12 +39,9 @@
             
 
             <li><a class="dropdown-item" href="./../pages/golongan.php">Info Golongan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./../pages/admin.php">Admin</a></li>
           </ul>
-          <li class="nav-item">
-            <?php if (isset($_SESSION['is_admin'])) :?>
-              <a class="nav-link active" href="./../pages/listpelanggan.php">List Pelanggan</a>
-            <?php endif; ?>
-          </li>
               </li>
               <?php if(!isset($_SESSION['is_login'])) :?>
                 <li class="nav-item">
